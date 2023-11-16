@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580366970010",
+    "project_id": "funhub-d1f36",
+    "storage_bucket": "funhub-d1f36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580366970010:android:3b3987ef98467019e38323",
+        "android_client_info": {
+          "package_name": "com.creativeitinstitute.funhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBez6CIl18tN8plV6O-_Ray0wExtreq0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
