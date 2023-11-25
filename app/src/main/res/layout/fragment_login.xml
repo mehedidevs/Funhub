@@ -22,11 +22,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
-        android:hint="Username "
+        android:hint="Email"
         app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextUsername"
+            android:id="@+id/editTextUserEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text" />

@@ -39,8 +39,28 @@ class RegistrationFragment :
         mAuth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener { result ->
 
-                mAuth.signOut()
-                findNavController().popBackStack()
+
+                // mRef.push().key
+
+
+                val user = User(
+                    name = name,
+                    email = email,
+                    password = password,
+                    profileImage = "",
+                    userId = result.user!!.uid
+                )
+
+                mRef.child("User").child(user.userId).setValue(user).addOnSuccessListener {
+                    mAuth.signOut()
+                    findNavController().popBackStack()
+                }.addOnFailureListener { error ->
+
+                    var alertDialog = AlertDialog.Builder(requireActivity()).setTitle("Error")
+                        .setMessage(error.message)
+
+                    alertDialog.create().show()
+                }
 
 
             }.addOnFailureListener { error ->
